@@ -1,3 +1,5 @@
+#ifndef _PRINTING_PARROT
+#define _PRINTING_PARROT
 #include <iostream>
 #include <string>
 
@@ -36,4 +38,4 @@ void print_message(Vehicle v, Message m){
 	}
 
 }
-
+#endif

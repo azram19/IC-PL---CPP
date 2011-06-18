@@ -2,7 +2,6 @@
 #include "vehicle.hpp"
 #include "bus.hpp"
 
-
 using namespace std;
 
 Bus::Bus(string plate_number) : Vehicle(plate_number){
