@@ -1,7 +1,7 @@
 #ifndef INC_VEHICLE_H
 #define INC_VEHICLE_H
 
-enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetCharge};
+enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
 #include<string>
 
 class Vehicle{

@@ -4,7 +4,7 @@
 using namespace std;
 
 //enum vehicleType {Lorry, PetrolCar, DieselCar, Bus};
-//enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetCharge};
+//enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
 
 template <class V, class M>
 
@@ -35,7 +35,7 @@ void print_message(V v, M m){
 		case SetLimit:cout<<"The council says diesel cars with emissions less than "<<v.get_limit()
 			<<" ppcm should pay a reduced rate"<<endl;
 			break;
-		case SetCharge:cout<<"The council sets the basic unit charge to #"<<v.get_rate()<<endl;
+		case SetRate:cout<<"The council sets the basic unit charge to #"<<v.get_rate()<<endl;
 			break;
 		deafult:cout<<"No message"<<endl;
 	}
