@@ -17,6 +17,7 @@ void DieselCar::set_emission(int emission){
 
 void DieselCar::set_limit(int limit){
     DieselCar::limit = limit;
+    this.print(SetLimit);
 }
 
 int DieselCar::get_limit(){

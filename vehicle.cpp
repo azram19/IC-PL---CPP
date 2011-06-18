@@ -47,6 +47,7 @@ void Vehicle::print(messageType msg){
 
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
+    this.print(SetRate);
 }
 
 bool Vehicle::was_charged(){
@@ -56,6 +57,7 @@ bool Vehicle::was_charged(){
 void Vehicle::enter(Date date, int time){
     enter_date = date;
     enter_time = time;
+    this.print(Entrance);
 }
 
 bool Vehicle::operator ==(const Vehicle& rhs) const{
