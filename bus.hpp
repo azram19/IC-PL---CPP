@@ -3,15 +3,16 @@
 
 #include "vehicle.hpp"
 
-class Bus:public Vehicle{
+class Bus : public Vehicle{
 	private:
-		int passengers;
+		int ra_passengers;
 		int total_passengers;
 	public:
 		Bus(string);
 		int get_total_passengers();
-		int get_passengers();
+		int get_ra_passengers();
 		void board(int);
+        void leave(int);
 };
 
 #endif /* INC_BUS_H */

@@ -1,7 +1,7 @@
 #include <string>
 #include "vehicle.hpp"
 
-String Vehicle::get_plate_number(){
+string Vehicle::get_plate_number(){
     return plate_number;
 }
 
@@ -29,9 +29,6 @@ void Vehicle::charge(){
     Vehicle::charging_call(this);
 }
 
-void Vehicle::leave(DATE d){
-    Vehicle::printing_call(this, d);
-}
 
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
@@ -61,7 +58,7 @@ bool Vehicle::operator !=(const Vehicle& rhs) const{
     return !(*this == rhs);
 }
 
-Vehicle::Vehicle(String plate_number){
+Vehicle::Vehicle(string plate_number){
     this.plate_number = plate_number;
 }
 void Vehicle::charging_call = NULL;
