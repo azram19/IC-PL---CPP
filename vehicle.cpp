@@ -38,11 +38,11 @@ double Vehicle::get_rate(){
 }
 
 void Vehicle::charge(){
-    Vehicle::charging_call(this);
+    set_charges(this);
 }
 
 void Vehicle::print(messageType msg){
-    Vehicle::printing_call(this, msg);
+    print_message(this, msg)
 }
 
 void Vehicle::set_rate(double rate){
@@ -91,6 +91,4 @@ Vehicle::Vehicle(string plate_number){
     total_charged = 0;
 }
 
-void Vehicle::charging_call = NULL;
-void Vehicle::printing_call = new PrintingParrot();
 double Vehicle::rate = 0;

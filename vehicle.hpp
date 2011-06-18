@@ -3,8 +3,7 @@
 
 enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
 #include<string>
-#include "date.hpp"
-using namespace std;
+#include"date.hpp"
 
 using namespace std;
 
@@ -41,6 +40,8 @@ class Vehicle{
     protected:
         static void (ChargingBeast::*charging_call)(Vehicle);
         static void (PrintingParrot::*printing_call)(Vehicle, messageType);
+        string type;
+        
         
         Vehicle(string);
         ~Vehicle();
@@ -48,8 +49,7 @@ class Vehicle{
     private:
         Date enter_date;
         int enter_time;
-        const string plate_number; 
-		const string type;
+        string plate_number; 
 		double charge;
 		double total_charge;
 	    bool wascharged;
