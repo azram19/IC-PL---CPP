@@ -4,7 +4,7 @@
 #include "vehicle.hpp"
 using namespace std;
 
-class Bus : public Vehicle{
+class Bus:public Vehicle{
 	private:
 		int ra_passengers;
 		int total_passengers;
