@@ -90,5 +90,5 @@ Vehicle::Vehicle(string plate_number){
 }
 
 void Vehicle::charging_call = NULL;
-void Vehicle::printing_call = NULL;
+void Vehicle::printing_call = new PrintingParrot();
 double Vehicle::rate = 0;

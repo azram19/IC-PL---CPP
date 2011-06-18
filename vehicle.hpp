@@ -22,7 +22,7 @@ class Vehicle{
         void charge();
         void print(messageType);
         
-        void enter(Date);
+        void enter(Date, int);
     
         static void set_rate(double);
     
