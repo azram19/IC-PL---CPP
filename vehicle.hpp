@@ -5,7 +5,9 @@
 
 class Vehicle{
     public:
-        String get_plate_number();
+		string get_name();
+		string get_type();
+        string get_plate_number();
         Date get_enter_date();
         Date get_leave_date();
         int get_enter_time();
@@ -19,7 +21,7 @@ class Vehicle{
         void enter(Date);
         void leave(Date);
     
-        static void set_rate(double);    
+        static void set_rate(double);
     
         bool operator == (const Vehicle&) const;
         bool operator > (const Vehicle&) const;
@@ -32,7 +34,7 @@ class Vehicle{
         static void (ChargingBeast::*charging_call)(Vehicle);
         static void (PrintingParrot::*printing_call)(Vehicle, CALL);
         
-        Vehicle(String);
+        Vehicle(string);
         ~Vehicle();
         
     private:
@@ -40,7 +42,9 @@ class Vehicle{
         Date leave_date;
         int enter_time;
         int leave_time;
-        String plate_number;
+        string plate_number;
+		string name;
+		string type;
         
         static double rate;
 };
