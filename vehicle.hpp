@@ -4,6 +4,9 @@
 enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
 #include<string>
 
+using namespace std;
+
+
 class Vehicle{
     public:
 		string get_type();
