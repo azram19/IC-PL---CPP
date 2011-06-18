@@ -4,6 +4,7 @@
 DieselCar::DieselCar(string plate_number, int emission) : Vehicle(plate_number){
         this.emission = emission;
         type = "diesel car";
+    	this.print(Registration);
 }
 
 int DieselCar::get_emission(){
