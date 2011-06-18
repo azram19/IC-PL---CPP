@@ -8,9 +8,7 @@ class Vehicle{
 		string get_type();
         string get_plate_number();
         Date get_enter_date();
-        Date get_leave_date();
         int get_enter_time();
-        int get_leave_time();
 		double get_charge();
 		double get_total_charge();
 		
@@ -43,9 +41,7 @@ class Vehicle{
         
     private:
         Date enter_date;
-        Date leave_date;
         int enter_time;
-        int leave_time;
         const string plate_number; 
 		const string type;
 		double charge;

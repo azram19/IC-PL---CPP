@@ -21,7 +21,6 @@ void Vehicle::charge(){
     Vehicle::charging_call(this);
 }
 
-
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
 }
