@@ -1,7 +1,6 @@
 #include <string>
 #include "vehicle.hpp"
 
-
 string Vehicle::get_type(){
     return type;
 }
@@ -54,8 +53,9 @@ bool Vehicle::was_charged(){
 	return wascharged;
 }
 
-void Vehicle::enter(){
-
+void Vehicle::enter(Date date, int time){
+    enter_date = date;
+    enter_time = time;
 }
 
 bool Vehicle::operator ==(const Vehicle& rhs) const{
