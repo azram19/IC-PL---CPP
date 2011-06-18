@@ -18,6 +18,7 @@ class Vehicle{
 		void set_total_charge();
         
         static double get_rate();
+	bool was_charged();
         
         void charge();
         void print(CALL);
@@ -49,6 +50,7 @@ class Vehicle{
 		const string type;
 		double charge;
 		double total_charge;
+	bool wascharged;
         
         static double rate;
 };

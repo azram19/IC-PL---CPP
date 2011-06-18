@@ -18,4 +18,8 @@ void DieselCar::set_limit(int limit){
     DieselCar::limit = limit;
 }
 
+int DieselCar::get_limit(){
+	return limit;
+}
+
 

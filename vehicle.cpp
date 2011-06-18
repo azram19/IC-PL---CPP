@@ -9,16 +9,8 @@ Date Vehicle::get_enter_date(){
     return enter_date;
 }
 
-Date Vehicle::get_leave_date(){
-    return leave_date;
-}
-
 int Vehicle::get_enter_time(){
     return enter_time;
-}
-
-int Vehicle::get_leave_time(){
-    return leave_time;
 }
 
 double Vehicle::get_rate(){
@@ -32,6 +24,10 @@ void Vehicle::charge(){
 
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
+}
+
+bool Vehicle::was_charged(){
+	return wascharged;
 }
 
 bool Vehicle::operator ==(const Vehicle& rhs) const{

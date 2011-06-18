@@ -12,7 +12,7 @@ class Bus : public Vehicle{
 		int get_total_passengers();
 		int get_ra_passengers();
 		void board(int);
-        void leave(int);
+		void leave(int);
 };
 
 #endif /* INC_BUS_H */
