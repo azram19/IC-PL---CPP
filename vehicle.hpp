@@ -12,6 +12,11 @@ class Vehicle{
         Date get_leave_date();
         int get_enter_time();
         int get_leave_time();
+		double get_charge();
+		double get_total_charge();
+		
+		void get_charge();
+		void set_total_charge();
         
         static double get_rate();
         
@@ -45,6 +50,8 @@ class Vehicle{
         string plate_number;
 		string name;
 		string type;
+		double charge;
+		double total_charge;
         
         static double rate;
 };
