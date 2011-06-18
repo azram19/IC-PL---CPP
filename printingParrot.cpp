@@ -3,12 +3,7 @@
 
 using namespace std;
 
-//enum vehicleType {Lorry, PetrolCar, DieselCar, Bus};
-//enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
-
-template <class V, class M>
-
-void print_message(V v, M m){
+void print_message(Vehicle v, Message m){
 	switch(m){
 		case Registration: cout<<"A ";
 			if(typeid(v)==typeid(Lorry)){cout<<v.get_emission()<<"-ppcm ";}
