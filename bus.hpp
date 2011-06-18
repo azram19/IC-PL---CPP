@@ -2,6 +2,7 @@
 #define INC_BUS_H
 
 #include "vehicle.hpp"
+using namespace std;
 
 class Bus:public Vehicle{
 	private:

@@ -3,6 +3,11 @@
 
 enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
 #include<string>
+#include "date.hpp"
+using namespace std;
+
+using namespace std;
+
 
 class Vehicle{
     public:
@@ -22,7 +27,7 @@ class Vehicle{
         void charge();
         void print(messageType);
         
-        void enter(Date);
+        void enter(Date, int);
     
         static void set_rate(double);
     

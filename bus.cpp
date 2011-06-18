@@ -1,8 +1,11 @@
+#include <string>
 #include "vehicle.hpp"
 #include "bus.hpp"
-#include <string>
 
-Bus::Bus(string plate_number) : Vehicle(string plate_number){
+
+using namespace std;
+
+Bus::Bus(string plate_number) : Vehicle(plate_number){
     ra_passengers = 0;
     total_passengers = 0;
     type = "Bus";
