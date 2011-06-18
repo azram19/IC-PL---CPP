@@ -7,8 +7,8 @@ using namespace std;
 Bus::Bus(string plate_number) : Vehicle(plate_number){
     ra_passengers = 0;
     total_passengers = 0;
-    type = "Bus";
-    this.print(Registration);
+    type = "bus";
+    print(Registration);
 }
 
 int Bus::get_total_passengers(){
