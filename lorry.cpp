@@ -1,3 +1,4 @@
+#include "vehicle.hpp"
 #include "lorry.hpp"
 
 Lorry::Lorry(string plate_number, int axle_number):Vehicle(plate_number){
