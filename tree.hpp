@@ -6,13 +6,14 @@ using namespace std;
 template <class KV> 
 class treeNode{
 	protected:
-		KV value;
+		KV* value;
 		treeNode* left;
 		treeNode* right;
 	public:
-		treeNode(KV, treeNode*, treeNode*);
+		treeNode(KV*, treeNode*, treeNode*);
 		treeNode* insert(KV*, treeNode*);
-		KV get(KV);
-		//void remove(KV);
+		KV* get(KV*, treeNode*);
+		treeNode* remove(KV*, treeNode*);
+		void freeTree(treeNode*);
 };
 
