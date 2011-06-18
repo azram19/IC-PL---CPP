@@ -6,6 +6,9 @@ enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
 #include "date.hpp"
 using namespace std;
 
+using namespace std;
+
+
 class Vehicle{
     public:
 		string get_type();
