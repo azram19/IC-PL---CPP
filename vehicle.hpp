@@ -5,18 +5,18 @@
 
 class Vehicle{
     public:
-		string get_name();
-		string get_type();
+	string get_name();
+	string get_type();
         string get_plate_number();
         Date get_enter_date();
         Date get_leave_date();
         int get_enter_time();
         int get_leave_time();
-		double get_charge();
-		double get_total_charge();
+	double get_charge();
+	double get_total_charge();
 		
-		void get_charge();
-		void set_total_charge();
+	void get_charge();
+	void set_total_charge();
         
         static double get_rate();
         
@@ -48,10 +48,10 @@ class Vehicle{
         int enter_time;
         int leave_time;
         string plate_number;
-		string name;
-		string type;
-		double charge;
-		double total_charge;
+	string name;
+	string type;
+	double charge;
+	double total_charge;
         
         static double rate;
 };
