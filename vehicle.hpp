@@ -5,15 +5,15 @@
 
 class Vehicle{
     public:
-		string get_type();
+	string get_type();
         string get_plate_number();
         Date get_enter_date();
         int get_enter_time();
-		double get_charge();
-		double get_total_charge();
+	double get_charge();
+	double get_total_charge();
 		
-		void get_charge();
-		void set_total_charge();
+	void get_charge();
+	void set_total_charge();
         
         static double get_rate();
 	bool was_charged();
@@ -43,9 +43,9 @@ class Vehicle{
         Date enter_date;
         int enter_time;
         const string plate_number; 
-		const string type;
-		double charge;
-		double total_charge;
+	const string type;
+	double charge;
+	double total_charge;
 	bool wascharged;
         
         static double rate;
