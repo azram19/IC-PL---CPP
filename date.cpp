@@ -11,7 +11,10 @@ Date::Date(int d, int m, int y){
 }
 
 void Date::print_date(){
-	cout << day << "/" << month << "/" << year; 
+	if(day>0 and day<10){cout<<"0";}
+	cout << day << "/";
+	if(month>0 and month<10){cout<<"0";}
+	cout << month << "/" << year; 
 }
 
 int Date::get_day(){
