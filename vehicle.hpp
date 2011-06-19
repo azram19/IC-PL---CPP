@@ -10,18 +10,18 @@ using namespace std;
 
 class Vehicle{
     public:
-		string get_type();
+        string get_type();
         string get_plate_number();
         Date get_enter_date();
         int get_enter_time();
-		double get_charge();
-		double get_total_charge();
+        double get_charge();
+        double get_total_charge();
 		
-		void set_charge(double);
+        void set_charge(double);
         
         static double get_rate();
 	    
-	    bool get_was_charged();
+        bool get_was_charged();
         void set_was_charged(bool);
         
         virtual void charge(){};    
@@ -39,6 +39,12 @@ class Vehicle{
         bool operator != (const Vehicle&) const;
         
         string type;
+
+	bool get_no_action();
+	bool get_goes_free();
+	void set_no_action(bool);
+	void set_goes_free(bool);
+
                 
         Vehicle(string);
         ~Vehicle(){};
@@ -48,9 +54,12 @@ class Vehicle{
         Date enter_date;
         int enter_time;
         string plate_number; 
-		double ra_charge;
-		double total_charge;
-	    bool wascharged;
+        double ra_charge;
+        double total_charge;
+        bool wascharged;
+	
+	bool no_action;
+	bool goes_free;
         
         static double rate;
 };

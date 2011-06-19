@@ -54,11 +54,28 @@ void Vehicle::set_was_charged(bool w){
 void Vehicle::enter(Date date, int time){
     if(date == enter_date){
         wascharged = false;
+	goes_free = false;
+	no_action = false;
     }
-	enter_date = date;
+    enter_date = date;
     enter_time = time;
     charge();
     print(Entrance);
+}
+
+bool Vehicle::get_no_action(){
+	return no_action;
+}
+bool Vehicle::get_goes_free(){
+	return goes_free;
+}
+
+void Vehicle::set_no_action(bool na){
+	no_action = na;
+}
+
+void Vehicle::set_goes_free(bool gf){
+	goes_free = gf;
 }
 
 bool Vehicle::operator ==(const Vehicle& rhs) const{
