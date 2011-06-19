@@ -22,12 +22,12 @@ int Bus::get_ra_passengers(){
 void Bus::board(int passengers){
     total_passengers += passengers;
     ra_passengers = passengers;
-    this.print(BusIn);
+    print(BusIn);
 }
 
 void Bus::leave(int passengers){
     total_passengers -= passengers;
     ra_passengers = passengers;
-    this.print(BusOut);
+    print(BusOut);
 }
 

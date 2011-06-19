@@ -59,7 +59,10 @@ void Vehicle::set_was_charged(bool wascharged){
 void Vehicle::enter(Date date, int time){
     enter_date = date;
     enter_time = time;
-    this.print(Entrance);
+    if(date != enter_date){
+        wascharged = false;
+    }
+    print(Entrance);
 }
 
 bool Vehicle::operator ==(const Vehicle& rhs) const{
@@ -93,4 +96,4 @@ Vehicle::Vehicle(string plate_number){
     total_charged = 0;
 }
 
-double Vehicle::rate = 0;
+double Vehicle::rate = 1;
