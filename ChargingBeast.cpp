@@ -7,16 +7,26 @@
 
 #include "ChargingBeast.hpp"
 #include "vehicle.hpp"
+#include "dieselCar.hpp"
+#include "petrolCar.hpp"
+#include "lorry.hpp"
+#include "bus.hpp"
 #include <iostream>
 
 using namespace std;
 
 
 void charge(Vehicle * wheeledMachine){
-	if(wheeledMachine->get_was_charged) return 69; //69 COZ THATS HOW I ROLL MOTHERFUCKERS
+	if(wheeledMachine->get_was_charged){
+		wheeledMachine->set_charge(0);
+		return 69;//69 COZ THATS HOW I ROLL MOTHERFUCKERS
+	}
 	if((wheeledMachine->get_enter_time()<9||wheeledMachine->get_enter_time()>18)&&
 			(typeid(wheeledMachine)==typeid(dieselCar)||typeid(wheeledMachine)==typeid(petrolCar)))
+	{
+	wheeledMachine->set_charge(0);
 	return 69;
+	}
 	//check types
 
 	if(typeid(wheeledMachine)==typeid(Lorry)){
@@ -31,6 +41,11 @@ void charge(Vehicle * wheeledMachine){
 		if(wheeledMachine->get_emission>wheeledMachine->get_limit) wheeledMachine->set_charge(3);
 		else wheeledMachine->set_charge(1);
 		wheeledMachine->set_was_charged();
+	}
+	else if(typeid(wheeledMachine)==typeid(bus)){
+			if(wheeledMachine->get_total_passengers()>20) wheeledMachine->set_charge(0);
+			else wheeledMachine->set_charge(5);
+			wheeledMachine->set_was_charged();
 	}
 
 }
