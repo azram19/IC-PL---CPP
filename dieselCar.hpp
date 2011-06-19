@@ -13,7 +13,7 @@ class DieselCar : public Vehicle {
 		static void set_limit(double);
 		
 		int get_emission();
-		double get_limit();
+		static double get_limit();
 		void set_emission(int);
 		
 		void charge();

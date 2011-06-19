@@ -38,9 +38,9 @@ void PrintingParrot::print_message(Vehicle *v, messageType m){
 				cout<<"The vehicle is charged #"<<v->get_charge()<<" (now owes #"<<v->get_total_charge()<<")"<<endl;}
 			break;
 		case SetLimit:			
-			cout<<"The council says diesel cars with emissions less than "<<((DieselCar*)v)->get_limit()<<" ppcm should pay a reduced rate"<<endl;
+			cout<<"The council says diesel cars with emissions less than "<<DieselCar::get_limit()<<" ppcm should pay a reduced rate"<<endl;
 			break;
-		case SetRate:cout<<"The council sets the basic unit charge to #"<<v->get_rate()<<endl;
+		case SetRate:cout<<"The council sets the basic unit charge to #"<<Vehicle::get_rate()<<endl;
 			break;
 		deafult:cout<<"No message"<<endl;
 	}
