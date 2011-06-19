@@ -19,6 +19,8 @@ class Date{
         
         bool operator != (const Vehicle&) const;
         bool operator == (const Vehicle&) const;
+
+	void print_date();
 };
 
 #endif /* INC_DATE_H */

@@ -4,6 +4,6 @@
 
 class PrintingParrot{
 	public:
-		static void print_message(Vehicle, messageType);
+		static void print_message(Vehicle *, messageType);
 };
 #endif
