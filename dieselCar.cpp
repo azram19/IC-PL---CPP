@@ -19,9 +19,7 @@ void DieselCar::set_emission(int emission){
 
 void DieselCar::set_limit(double limit){
     DieselCar::limit = limit;
-    
-    DieselCar x("2", 1);
-    x.print(SetLimit);
+    PrintingParrot::print_message(NULL, SetLimit);
 }
 
 double DieselCar::get_limit(){
