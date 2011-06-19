@@ -1,12 +1,16 @@
 #include <iostream>
 #include <string>
+#include "tree.hpp"
 
 using namespace std;
 
-template <class K, class V>
+template <class K, class KV>
 class Map{
 	protected:
-		K key;
-		V value;
-
+		treeNode<KV>* root;
+	public:
+		treeNode<KV>* put(K*, KV*);
+		KV* operator[](K*);
+		void freeMap(treeNode<KV>*);
+		bool isEmpty(treeNode<KV>*);
 };
