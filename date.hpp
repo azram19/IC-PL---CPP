@@ -17,8 +17,10 @@ class Date{
         void set_month(int);
         void set_year(int);
         
-        bool operator != (const Date&) const;
-        bool operator == (const Date&) const;
+        bool operator != (const Vehicle&) const;
+        bool operator == (const Vehicle&) const;
+
+	void print_date();
 };
 
 #endif /* INC_DATE_H */
