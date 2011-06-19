@@ -32,5 +32,4 @@ void charge(Vehicle * wheeledMachine){
 		else wheeledMachine->set_charge(1);
 		wheeledMachine->set_was_charged();
 	}
-
 }

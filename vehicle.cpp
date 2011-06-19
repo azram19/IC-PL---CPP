@@ -2,6 +2,7 @@
 #include "vehicle.hpp"
 #include "ChargingBeast.hpp"
 #include "printingParrot.hpp"
+#include "date.hpp"
 
 using namespace std;
 
@@ -43,7 +44,7 @@ void Vehicle::charge(){
 }
 
 void Vehicle::print(messageType msg){
-    PrintingParrot::print_message(this, msg);
+    PrintingParrot::print_message(*this, msg);
 }
 
 void Vehicle::set_rate(double rate){
@@ -65,9 +66,9 @@ void Vehicle::enter(Date date, int time){
 }
 
 bool Vehicle::operator ==(const Vehicle& rhs) const{
-    return (plate_number).compare(rhs.get_plate_number()) == 0;
+    return plate_number == rhs.plate_number;
 }
-
+/*
 bool Vehicle::operator >(const Vehicle& rhs) const{
     return (plate_number).compare(rhs.get_plate_number()) > 0;
 }
@@ -87,9 +88,9 @@ bool Vehicle::operator <=(const Vehicle& rhs) const{
 bool Vehicle::operator !=(const Vehicle& rhs) const{
     return !(*this == rhs);
 }
-
+*/
 Vehicle::Vehicle(string plate_number){
-    this.plate_number = plate_number;
+    this -> plate_number = plate_number;
     wascharged = false;
     ra_charge = 0;
     total_charge = 0;

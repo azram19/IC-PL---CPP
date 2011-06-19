@@ -13,12 +13,12 @@ class Date{
         int get_month();
         int get_year();
         
-        void set_day();
-        void set_month();
-        void set_year();
+        void set_day(int);
+        void set_month(int);
+        void set_year(int);
         
-        bool operator != (const Vehicle&) const;
-        bool operator == (const Vehicle&) const;
+        bool operator != (const Date&) const;
+        bool operator == (const Date&) const;
 };
 
 #endif /* INC_DATE_H */

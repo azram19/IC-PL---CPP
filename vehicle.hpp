@@ -3,7 +3,9 @@
 
 enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
 #include<string>
-#include"date.hpp"
+#include "ChargingBeast.hpp"
+#include "printingParrot.hpp"
+#include "date.hpp"
 
 using namespace std;
 
@@ -27,7 +29,7 @@ class Vehicle{
         
         void enter(Date, int);
     
-        static void set_rate(double);
+        void set_rate(double);
     
         bool operator == (const Vehicle&) const;
         bool operator > (const Vehicle&) const;
@@ -37,10 +39,7 @@ class Vehicle{
         bool operator != (const Vehicle&) const;
     
     protected:
-        static void (ChargingBeast::*charging_call)(Vehicle);
-        static void (PrintingParrot::*printing_call)(Vehicle, messageType);
         string type;
-        
         
         Vehicle(string);
         ~Vehicle();
