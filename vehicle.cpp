@@ -96,4 +96,4 @@ Vehicle::Vehicle(string plate_number){
     total_charged = 0;
 }
 
-double Vehicle::rate = 0;
+double Vehicle::rate = 1;
