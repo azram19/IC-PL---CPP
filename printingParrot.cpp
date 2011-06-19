@@ -1,11 +1,11 @@
-#ifndef _PRINTING_PARROT
-#define _PRINTING_PARROT
 #include <iostream>
 #include <string>
+#include "printingParrot.hpp"
+#include "vehicle.hpp"
 
 using namespace std;
 
-void PrintingParrot::print_message(Vehicle v, messageType m){
+void PrintingParrot::print_message(Vehicle &v, messageType m){
 	switch(m){
 		case Registration: cout<<"A ";
 			if(typeid(v)==typeid(Lorry)){cout<<v.get_emission()<<"-ppcm ";}
@@ -38,4 +38,4 @@ void PrintingParrot::print_message(Vehicle v, messageType m){
 	}
 
 }
-#endif
+

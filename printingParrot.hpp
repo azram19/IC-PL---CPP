@@ -1,5 +1,6 @@
 #ifndef _PRINTING_PARROT
 #define _PRINTING_PARROT
+#include "vehicle.hpp"
 
 class PrintingParrot{
 	public:

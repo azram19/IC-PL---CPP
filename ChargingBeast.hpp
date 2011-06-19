@@ -5,7 +5,8 @@ using namespace std;
 
 class ChargingBeast{
 public:
-	static void charge();
+	static void charge(); //FUCKING HIPSTER CAMEL CASE
+
 };
 
 #endif

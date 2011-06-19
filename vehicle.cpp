@@ -1,23 +1,24 @@
 #include <string>
 #include "vehicle.hpp"
+#include "ChargingBeast.hpp"
+#include "printingParrot.hpp"
+
+using namespace std;
 
 string Vehicle::get_type(){
     return type;
 }
 
 double Vehicle::get_charge(){
-    return total_charge;
+    return ra_charge;
 }
 
 double Vehicle::get_total_charge(){
-    return charge;
+    return total_charge;
 }
 
 void Vehicle::set_charge(double ch){
-    charge = ch;
-}
-
-void Vehicle::set_total_charge(double ch){
+    ra_charge = ch;
     total_charge += ch;
 }
 
@@ -38,26 +39,21 @@ double Vehicle::get_rate(){
 }
 
 void Vehicle::charge(){
-    charging(this);
+    ChargingBeast::charge(this);
 }
 
 void Vehicle::print(messageType msg){
-    print_message(this, msg)
+    PrintingParrot::print_message(this, msg);
 }
 
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
-    this.print(SetRate);
+    print(SetRate);
 }
 
 bool Vehicle::get_was_charged(){
 	return wascharged;
 }
-
-void Vehicle::set_was_charged(bool wascharged){
-	this.wascharged = wascharged;
-}
-
 
 void Vehicle::enter(Date date, int time){
     enter_date = date;
@@ -95,8 +91,8 @@ bool Vehicle::operator !=(const Vehicle& rhs) const{
 Vehicle::Vehicle(string plate_number){
     this.plate_number = plate_number;
     wascharged = false;
-    charge = 0;
-    total_charged = 0;
+    ra_charge = 0;
+    total_charge = 0;
 }
 
 double Vehicle::rate = 1;
