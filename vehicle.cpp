@@ -15,9 +15,6 @@ double Vehicle::get_total_charge(){
 
 void Vehicle::set_charge(double ch){
     charge = ch;
-}
-
-void Vehicle::set_total_charge(double ch){
     total_charge += ch;
 }
 
