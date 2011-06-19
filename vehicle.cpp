@@ -53,7 +53,6 @@ void Vehicle::set_was_charged(bool w){
 }
 void Vehicle::enter(Date date, int time){
     if(date == enter_date){
-        printf("kot");
         wascharged = false;
     }
 	enter_date = date;
