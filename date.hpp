@@ -16,6 +16,9 @@ class Date{
         void set_day();
         void set_month();
         void set_year();
+        
+        bool operator != (const Vehicle&) const;
+        bool operator == (const Vehicle&) const;
 };
 
 #endif /* INC_DATE_H */
