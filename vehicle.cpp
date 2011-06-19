@@ -41,9 +41,7 @@ double Vehicle::get_rate(){
 
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
-
-    Vehicle x("2");
-    x.print(SetRate);
+    PrintingParrot::print_message(NULL, SetRate);
 }
 
 bool Vehicle::get_was_charged(){
