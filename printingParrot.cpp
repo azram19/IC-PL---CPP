@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 #include "printingParrot.hpp"
 #include "vehicle.hpp"
 #include "lorry.hpp"
@@ -13,7 +14,8 @@ using namespace std;
 
 void PrintingParrot::print_message(Vehicle *v, messageType m){
 	cout<<"*** ";
-	cout.precision(2);
+  	cout << setprecision (2);
+  	cout << fixed;
 	switch(m){
 		case Registration: cout<<"A ";
 			if(typeid(*v)==typeid(DieselCar)){cout<<((DieselCar*)v)->get_emission()<<"-ppcm ";}
