@@ -37,11 +37,12 @@ class Vehicle{
         bool operator >= (const Vehicle&) const;
         bool operator <= (const Vehicle&) const;
         bool operator != (const Vehicle&) const;
-        string type;
-    protected:
         
+        string type;
+                
         Vehicle(string);
-        ~Vehicle();
+        ~Vehicle(){};
+    protected:
         
     private:
         Date enter_date;

@@ -9,6 +9,7 @@ class DieselCar : public Vehicle {
         int emission;
 	public:
 		DieselCar(string, int);
+		~DieselCar(){};
 		static void set_limit(int);
 		
 		int get_emission();

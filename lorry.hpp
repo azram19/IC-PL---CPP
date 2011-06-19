@@ -10,6 +10,7 @@ class Lorry : public Vehicle{
 		int axle_number;
 	public:
 		Lorry(string, int);
+		~Lorry(){};
 		int get_axle_number();
 		void charge();
 		void print(messageType);

@@ -10,6 +10,7 @@ class Bus : public Vehicle{
 		int total_passengers;
 	public:
 		Bus(string);
+		~Bus(){};
 		int get_total_passengers();
 		int get_ra_passengers();
 		void board(int);

@@ -36,3 +36,4 @@ void DieselCar::print(messageType msg){
     PrintingParrot::print_message(this, msg);
 }
 
+int DieselCar::limit = 0;
