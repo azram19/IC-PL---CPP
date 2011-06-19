@@ -12,7 +12,7 @@
 using namespace std;
 
 
-void settingCharges(Vehicle * wheeledMachine){
+void charge(Vehicle * wheeledMachine){
 	if(wheeledMachine->get_was_charged) return 69; //69 COZ THATS HOW I ROLL MOTHERFUCKERS
 	if((wheeledMachine->get_enter_time()<9||wheeledMachine->get_enter_time()>18)&&
 			(typeid(wheeledMachine)==typeid(dieselCar)||typeid(wheeledMachine)==typeid(petrolCar)))
