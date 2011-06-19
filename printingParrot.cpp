@@ -1,7 +1,6 @@
-#ifndef _PRINTING_PARROT
-#define _PRINTING_PARROT
 #include <iostream>
 #include <string>
+#include "printingParrot.hpp"
 
 using namespace std;
 
@@ -38,4 +37,4 @@ void PrintingParrot::print_message(Vehicle v, messageType m){
 	}
 
 }
-#endif
+

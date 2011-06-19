@@ -15,9 +15,6 @@ double Vehicle::get_total_charge(){
 
 void Vehicle::set_charge(double ch){
     ra_charge = ch;
-}
-
-void Vehicle::set_total_charge(double ch){
     total_charge += ch;
 }
 
@@ -42,7 +39,7 @@ void Vehicle::charge(){
 }
 
 void Vehicle::print(messageType msg){
-    print_message(this, msg)
+    print_message(this, msg);
 }
 
 void Vehicle::set_rate(double rate){
@@ -96,7 +93,7 @@ Vehicle::Vehicle(string plate_number){
     this.plate_number = plate_number;
     wascharged = false;
     ra_charge = 0;
-    total_charg = 0;
+    total_charge = 0;
 }
 
 double Vehicle::rate = 1;
