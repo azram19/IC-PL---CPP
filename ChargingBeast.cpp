@@ -22,7 +22,7 @@ void ChargingBeast::charge(Vehicle * wheeledMachine){
 		wheeledMachine -> set_charge(0);
 		return;
 	}
-	if((wheeledMachine->get_enter_time()<9||wheeledMachine->get_enter_time()>18)&&
+	if((wheeledMachine->get_enter_time()<9 || wheeledMachine->get_enter_time()>18)&&
 			(typeid(*wheeledMachine)==typeid(DieselCar)||typeid(*wheeledMachine)==typeid(PetrolCar)))
 	{
 	wheeledMachine->set_charge(0);
@@ -31,18 +31,18 @@ void ChargingBeast::charge(Vehicle * wheeledMachine){
 	//check types
 
 	if(typeid(*wheeledMachine)==typeid(Lorry)){
-		wheeledMachine->set_charge(((Lorry*)wheeledMachine) -> get_axle_number() *((Lorry*)wheeledMachine)->get_rate());
+		wheeledMachine->set_charge(((Lorry*)wheeledMachine) -> get_axle_number() *Vehicle::get_rate());
 		wheeledMachine->set_was_charged(true);
 	}
 	else if(typeid(*wheeledMachine) == typeid(PetrolCar)){
-		wheeledMachine->set_charge(2.0);
+		wheeledMachine->set_charge(2*Vehicle::get_rate());
 		wheeledMachine->set_was_charged(true);
 	}
 	else if(typeid(*wheeledMachine) == typeid(DieselCar)){
 		if(((DieselCar*)wheeledMachine) -> get_emission() > ((DieselCar*)wheeledMachine) -> get_limit()) {
-		    wheeledMachine->set_charge(3);
+		    wheeledMachine->set_charge(3*Vehicle::get_rate());
 		} else {
-		    wheeledMachine->set_charge(1);
+		    wheeledMachine->set_charge(1*Vehicle::get_rate());
 		}
 		wheeledMachine->set_was_charged(true);
 	}
@@ -50,7 +50,7 @@ void ChargingBeast::charge(Vehicle * wheeledMachine){
 			if(((Bus*)wheeledMachine) -> get_total_passengers() > 20){
 			    wheeledMachine -> set_charge(0);
 			} else {
-			    wheeledMachine -> set_charge(5);
+			    wheeledMachine -> set_charge(5*Vehicle::get_rate());
 			}
 			wheeledMachine -> set_was_charged(true);
 	}

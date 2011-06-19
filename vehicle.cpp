@@ -4,7 +4,6 @@
 #include "printingParrot.hpp"
 #include "date.hpp"
 
-#include<cstdio>
 
 using namespace std;
 
@@ -57,7 +56,7 @@ void Vehicle::enter(Date date, int time){
         printf("kot");
         wascharged = false;
     }
-    enter_date = date;
+	enter_date = date;
     enter_time = time;
     charge();
     print(Entrance);
