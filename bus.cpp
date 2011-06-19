@@ -1,6 +1,8 @@
 #include <string>
 #include "vehicle.hpp"
 #include "bus.hpp"
+#include "ChargingBeast.hpp"
+#include "printingParrot.hpp"
 
 using namespace std;
 
@@ -31,11 +33,11 @@ void Bus::leave(int passengers){
     print(BusOut);
 }
 
-void Lorry::charge(){
+void Bus::charge(){
     ChargingBeast::charge(this);
 }
 
-void Lorry::print(messageType msg){
+void Bus::print(messageType msg){
     PrintingParrot::print_message(this, msg);
 }
 

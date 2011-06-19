@@ -44,7 +44,3 @@ void PrintingParrot::print_message(Vehicle *v, messageType m){
 
 }
 
-int main(){
-return 0;
-}
-

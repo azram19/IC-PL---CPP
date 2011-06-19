@@ -1,5 +1,7 @@
 #include "vehicle.hpp"
 #include "lorry.hpp"
+#include "ChargingBeast.hpp"
+#include "printingParrot.hpp"
 
 using namespace std;
 

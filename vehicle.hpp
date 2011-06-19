@@ -20,14 +20,16 @@ class Vehicle{
 		void set_charge(double);
         
         static double get_rate();
+	    
 	    bool get_was_charged();
+        void set_was_charged(bool);
         
-        virtual void charge();
-        virtual void print(messageType);
+        virtual void charge(){};    
+        virtual void print(messageType msg){};
         
         void enter(Date, int);
     
-        void set_rate(double);
+        static void set_rate(double);
     
         bool operator == (const Vehicle&) const;
         bool operator > (const Vehicle&) const;

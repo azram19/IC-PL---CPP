@@ -41,13 +41,17 @@ double Vehicle::get_rate(){
 
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
-    print(SetRate);
+
+    Vehicle x("2");
+    x.print(SetRate);
 }
 
 bool Vehicle::get_was_charged(){
 	return wascharged;
 }
-
+void Vehicle::set_was_charged(bool w){
+	wascharged = w;
+}
 void Vehicle::enter(Date date, int time){
     enter_date = date;
     enter_time = time;
@@ -89,7 +93,3 @@ Vehicle::Vehicle(string plate_number){
 }
 
 double Vehicle::rate = 1;
-
-int main(){
-return 0;
-}

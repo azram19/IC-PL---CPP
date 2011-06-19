@@ -5,5 +5,7 @@
 class PetrolCar:public Vehicle{
 	public:
 		PetrolCar(string);
+        void charge();
+		void print(messageType);
 };
 #endif /* INC_PETROL_CAR_H */

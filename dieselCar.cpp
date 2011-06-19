@@ -1,10 +1,12 @@
 #include "vehicle.hpp"
 #include "dieselCar.hpp"
+#include "ChargingBeast.hpp"
+#include "printingParrot.hpp"
 
 DieselCar::DieselCar(string plate_number, int emission) : Vehicle(plate_number){
-        this.emission = emission;
+        this -> emission = emission;
         type = "diesel car";
-    	this.print(Registration);
+    	print(Registration);
 }
 
 int DieselCar::get_emission(){
@@ -12,16 +14,25 @@ int DieselCar::get_emission(){
 }
 
 void DieselCar::set_emission(int emission){
-    this.emission = emission;
+    this -> emission = emission;
 }
 
 void DieselCar::set_limit(int limit){
     DieselCar::limit = limit;
-    this.print(SetLimit);
+    
+    DieselCar x("2", 1);
+    x.print(SetLimit);
 }
 
 int DieselCar::get_limit(){
 	return limit;
 }
 
+void DieselCar::charge(){
+    ChargingBeast::charge(this);
+}
+
+void DieselCar::print(messageType msg){
+    PrintingParrot::print_message(this, msg);
+}
 

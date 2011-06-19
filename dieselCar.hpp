@@ -14,6 +14,9 @@ class DieselCar : public Vehicle {
 		int get_emission();
 		int get_limit();
 		void set_emission(int);
+		
+		void charge();
+		void print(messageType);
 };
 #endif /* INC_DIESEL_CAR_H */
 
