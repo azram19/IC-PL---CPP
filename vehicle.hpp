@@ -25,7 +25,7 @@ class Vehicle{
         void set_was_charged(bool);
         
         virtual void charge(){};    
-        virtual void print(messageType msg){};
+        virtual void print(messageType msg){};Z
         
         void enter(Date, int);
     
