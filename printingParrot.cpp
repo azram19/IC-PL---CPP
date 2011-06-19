@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void print_message(Vehicle v, Message m){
+void PrintingParrot::print_message(Vehicle v, messageType m){
 	switch(m){
 		case Registration: cout<<"A ";
 			if(typeid(v)==typeid(Lorry)){cout<<v.get_emission()<<"-ppcm ";}

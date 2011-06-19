@@ -21,7 +21,8 @@ class Vehicle{
 		void set_total_charge(double);
         
         static double get_rate();
-	    bool was_charged();
+	    bool get_was_charged();
+	void set_was_charged();
         
         void charge();
         void print(messageType);
