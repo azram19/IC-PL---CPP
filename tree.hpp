@@ -1,3 +1,9 @@
+/*
+ * Class treeNode
+ * 
+ * @author: Agnieszka Szefer <agnieszka.m.szefer@gmail.com>
+ */
+
 #include <iostream>
 #include <string>
 
