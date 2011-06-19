@@ -2,7 +2,7 @@
  * ChargingBeast.cpp
  *
  *  Created on: 18 Jun 2011
- *      Author: lk1110
+ *      Author: Lukasz Kmiecik 
  */
 
 #include "ChargingBeast.hpp"
