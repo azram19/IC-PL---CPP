@@ -1,3 +1,9 @@
+/*
+ * Class Map
+ * 
+ * @author: Agnieszka Szefer <agnieszka.m.szefer@gmail.com>
+ */
+
 #include <iostream>
 #include <string>
 #include "tree.hpp"
