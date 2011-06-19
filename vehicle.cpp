@@ -10,18 +10,15 @@ string Vehicle::get_type(){
 }
 
 double Vehicle::get_charge(){
-    return total_charge;
+    return ra_charge;
 }
 
 double Vehicle::get_total_charge(){
-    return charge;
+    return total_charge;
 }
 
 void Vehicle::set_charge(double ch){
-    charge = ch;
-}
-
-void Vehicle::set_total_charge(double ch){
+    ra_charge = ch;
     total_charge += ch;
 }
 
@@ -99,8 +96,8 @@ bool Vehicle::operator !=(const Vehicle& rhs) const{
 Vehicle::Vehicle(string plate_number){
     this.plate_number = plate_number;
     wascharged = false;
-    charge = 0;
-    total_charged = 0;
+    ra_charge = 0;
+    total_charge = 0;
 }
 
 double Vehicle::rate = 1;

@@ -18,11 +18,10 @@ class Vehicle{
 		double get_total_charge();
 		
 		void set_charge(double);
-		void set_total_charge(double);
         
         static double get_rate();
 	    bool get_was_charged();
-	void set_was_charged();
+	    void set_was_charged();
         
         void charge();
         void print(messageType);
@@ -51,7 +50,7 @@ class Vehicle{
         Date enter_date;
         int enter_time;
         string plate_number; 
-		double charge;
+		double ra_charge;
 		double total_charge;
 	    bool wascharged;
         
