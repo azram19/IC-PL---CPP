@@ -51,7 +51,7 @@ class Vehicle{
         Date enter_date;
         int enter_time;
         string plate_number; 
-		double charge;
+		double ra_charge;
 		double total_charge;
 	    bool wascharged;
         
