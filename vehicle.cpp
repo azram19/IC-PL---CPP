@@ -1,5 +1,9 @@
 #include <string>
 #include "vehicle.hpp"
+#include "ChargingBeast.hpp"
+#include "printingParrot.hpp"
+
+using namespace std;
 
 string Vehicle::get_type(){
     return type;
@@ -35,11 +39,11 @@ double Vehicle::get_rate(){
 }
 
 void Vehicle::charge(){
-    charging(this);
+    ChargingBeast::charge(this);
 }
 
 void Vehicle::print(messageType msg){
-    print_message(this, msg);
+    PrintingParrot::print_message(this, msg);
 }
 
 void Vehicle::set_rate(double rate){
