@@ -39,7 +39,7 @@ void Vehicle::charge(){
 }
 
 void Vehicle::print(messageType msg){
-    print_message(this, msg)
+    print_message(this, msg);
 }
 
 void Vehicle::set_rate(double rate){
