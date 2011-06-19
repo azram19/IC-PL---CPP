@@ -1,4 +1,8 @@
 #include "date.hpp"
+#include<iostream>
+
+using namespace std;
+
 
 Date::Date(int d, int m, int y){
     day = d;
@@ -7,7 +11,7 @@ Date::Date(int d, int m, int y){
 }
 
 void Date::print_date(){
-	cout << day << " / " << month << " / " << year << endl; 
+	cout << day << "/" << month << "/" << year << endl; 
 }
 
 int Date::get_day(){
