@@ -17,14 +17,14 @@ void DieselCar::set_emission(int emission){
     this -> emission = emission;
 }
 
-void DieselCar::set_limit(int limit){
+void DieselCar::set_limit(double limit){
     DieselCar::limit = limit;
     
     DieselCar x("2", 1);
     x.print(SetLimit);
 }
 
-int DieselCar::get_limit(){
+double DieselCar::get_limit(){
 	return limit;
 }
 
@@ -36,4 +36,4 @@ void DieselCar::print(messageType msg){
     PrintingParrot::print_message(this, msg);
 }
 
-int DieselCar::limit = 0;
+double DieselCar::limit = 0;

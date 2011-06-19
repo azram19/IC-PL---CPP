@@ -5,15 +5,15 @@
 
 class DieselCar : public Vehicle {
 	private:
-        static int limit;
+        static double limit;
         int emission;
 	public:
 		DieselCar(string, int);
 		~DieselCar(){};
-		static void set_limit(int);
+		static void set_limit(double);
 		
 		int get_emission();
-		int get_limit();
+		double get_limit();
 		void set_emission(int);
 		
 		void charge();

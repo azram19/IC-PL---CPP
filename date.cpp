@@ -11,7 +11,7 @@ Date::Date(int d, int m, int y){
 }
 
 void Date::print_date(){
-	cout << day << "/" << month << "/" << year << endl; 
+	cout << day << "/" << month << "/" << year; 
 }
 
 int Date::get_day(){
