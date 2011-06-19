@@ -30,7 +30,7 @@ void PrintingParrot::print_message(Vehicle *v, messageType m){
 				cout<<v->get_type()<<" ("<<v->get_plate_number()<<") enters on ";
 				(v->get_enter_date()).print_date();
 				cout<<" at "<<v->get_enter_time()<<"h00 hours"<<endl;
-			if(v->get_was_charged()){
+			if(not v->get_was_charged()){
 				cout<<"The vehicle has already been charged today ; no action is taken"<<endl;}
 			else if(typeid(*v)==typeid(Bus) and ((Bus*)v)->get_ra_passengers()>20){
 				cout<<"The vehicle goes free (now owes #"<<v->get_total_charge()<<")"<<endl;}

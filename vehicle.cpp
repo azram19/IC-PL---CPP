@@ -56,6 +56,7 @@ void Vehicle::enter(Date date, int time){
     if(date != enter_date){
         wascharged = false;
     }
+    charge();
     print(Entrance);
 }
 
