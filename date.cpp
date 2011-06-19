@@ -30,3 +30,11 @@ void Date::set_year(int year){
     this.year = year;
 }
 
+bool Date::operator !=(const Date& rhs) const{
+    return (day == rhs -> day) ? ((month == rhs -> month) ? ((year == rhs -> year) ? true : false) : false) : false;
+}
+
+
+bool Date::operator ==(const Date& rhs) const{
+    return !(this == rhs);
+}
