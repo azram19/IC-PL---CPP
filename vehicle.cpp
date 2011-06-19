@@ -39,14 +39,6 @@ double Vehicle::get_rate(){
     return rate;
 }
 
-void Vehicle::charge(){
-    ChargingBeast::charge(this);
-}
-
-void Vehicle::print(messageType msg){
-    PrintingParrot::print_message(*this, msg);
-}
-
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
     print(SetRate);
@@ -97,3 +89,7 @@ Vehicle::Vehicle(string plate_number){
 }
 
 double Vehicle::rate = 1;
+
+int main(){
+return 0;
+}

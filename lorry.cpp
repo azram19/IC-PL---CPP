@@ -1,6 +1,8 @@
 #include "vehicle.hpp"
 #include "lorry.hpp"
 
+using namespace std;
+
 Lorry::Lorry(string plate_number, int axle_number) : Vehicle(plate_number){
 	this -> axle_number = axle_number;
 	this -> type = "lorry";
@@ -11,3 +13,10 @@ int Lorry::get_axle_number(){
 	return axle_number;
 }
 
+void Lorry::charge(){
+    ChargingBeast::charge(this);
+}
+
+void Lorry::print(messageType msg){
+    PrintingParrot::print_message(this, msg);
+}

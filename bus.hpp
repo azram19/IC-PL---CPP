@@ -14,6 +14,8 @@ class Bus : public Vehicle{
 		int get_ra_passengers();
 		void board(int);
 		void leave(int);
+		void charge();
+		void print(messageType);
 };
 
 #endif /* INC_BUS_H */

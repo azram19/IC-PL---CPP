@@ -1,9 +1,9 @@
+#include <iostream>
 #include "date.hpp"
-#include<iostream>
 
 using namespace std;
 
-
+Date::Date(){}
 Date::Date(int d, int m, int y){
     day = d;
     month = m;
@@ -46,8 +46,15 @@ bool Date::operator !=(const Date& rhs) const{
 bool Date::operator ==(const Date& rhs) const{
     return !(*this != rhs);
 }
-/*
+
+#include<cstdio>
+
 int main(){
     Date nd(20, 9, 1991);
+    Date sd(20, 9, 1991);
+    
+    printf("True %d\n", (int)(nd != sd));
+    printf("True %d\n", (int)(nd == sd));
+    
     return 0;
-}*/
+}

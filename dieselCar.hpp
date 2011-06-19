@@ -3,7 +3,7 @@
 
 #include "vehicle.hpp"
 
-class DieselCar : public Vehicle{
+class DieselCar : public Vehicle {
 	private:
         static int limit;
         int emission;

@@ -31,3 +31,11 @@ void Bus::leave(int passengers){
     print(BusOut);
 }
 
+void Lorry::charge(){
+    ChargingBeast::charge(this);
+}
+
+void Lorry::print(messageType msg){
+    PrintingParrot::print_message(this, msg);
+}
+

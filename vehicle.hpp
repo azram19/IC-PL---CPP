@@ -2,9 +2,7 @@
 #define INC_VEHICLE_H
 
 enum messageType {Registration, BusIn, BusOut, Entrance, SetLimit, SetRate};
-#include<string>
-#include "ChargingBeast.hpp"
-#include "printingParrot.hpp"
+#include <string>
 #include "date.hpp"
 
 using namespace std;
@@ -24,8 +22,8 @@ class Vehicle{
         static double get_rate();
 	    bool get_was_charged();
         
-        void charge();
-        void print(messageType);
+        virtual void charge();
+        virtual void print(messageType);
         
         void enter(Date, int);
     
@@ -37,9 +35,8 @@ class Vehicle{
         bool operator >= (const Vehicle&) const;
         bool operator <= (const Vehicle&) const;
         bool operator != (const Vehicle&) const;
-    
-    protected:
         string type;
+    protected:
         
         Vehicle(string);
         ~Vehicle();

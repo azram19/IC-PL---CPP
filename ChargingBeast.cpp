@@ -12,11 +12,12 @@
 #include "lorry.hpp"
 #include "bus.hpp"
 #include <iostream>
+#include <typeinfo>
 
 using namespace std;
 
 
-void charge(Vehicle * wheeledMachine){
+void ChargingBeast::charge(Vehicle * wheeledMachine){
 	if(wheeledMachine->get_was_charged){
 		wheeledMachine->set_charge(0);
 		return 69;//69 COZ THATS HOW I ROLL MOTHERFUCKERS
