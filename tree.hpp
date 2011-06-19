@@ -13,7 +13,6 @@ class treeNode{
 		treeNode(KV*, treeNode*, treeNode*);
 		treeNode* insert(KV*, treeNode*);
 		KV* get(KV*, treeNode*);
-		treeNode* remove(KV*, treeNode*);
 		void freeTree(treeNode*);
 };
 
