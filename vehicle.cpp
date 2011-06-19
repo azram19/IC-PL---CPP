@@ -38,7 +38,7 @@ double Vehicle::get_rate(){
 }
 
 void Vehicle::charge(){
-    set_charges(this);
+    charging(this);
 }
 
 void Vehicle::print(messageType msg){
