@@ -1,3 +1,11 @@
+/*
+ *  ChargingBeast.hpp
+ *
+ *  Created on: 18 Jun 2011
+ *  Author: Lukasz Kmiecik 
+ */
+
+
 #ifndef CHARGING_BEAST
 #define CHARGING_BEAST
 
