@@ -4,6 +4,8 @@
 #include "printingParrot.hpp"
 #include "date.hpp"
 
+#include<cstdio>
+
 using namespace std;
 
 string Vehicle::get_type(){
@@ -51,11 +53,13 @@ void Vehicle::set_was_charged(bool w){
 	wascharged = w;
 }
 void Vehicle::enter(Date date, int time){
-    enter_date = date;
-    enter_time = time;
-    if(date != enter_date){
+    if(date == enter_date){
+        printf("kot");
         wascharged = false;
     }
+    enter_date = date;
+    enter_time = time;
+    charge();
     print(Entrance);
 }
 

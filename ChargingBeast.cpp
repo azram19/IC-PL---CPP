@@ -20,11 +20,13 @@ using namespace std;
 void ChargingBeast::charge(Vehicle * wheeledMachine){
 	if(wheeledMachine -> get_was_charged()){
 		wheeledMachine -> set_charge(0);
+		return;
 	}
 	if((wheeledMachine->get_enter_time()<9||wheeledMachine->get_enter_time()>18)&&
 			(typeid(*wheeledMachine)==typeid(DieselCar)||typeid(*wheeledMachine)==typeid(PetrolCar)))
 	{
 	wheeledMachine->set_charge(0);
+	return;
 	}
 	//check types
 
