@@ -21,7 +21,6 @@ class Vehicle{
         
         static double get_rate();
 	    bool get_was_charged();
-	    void set_was_charged();
         
         void charge();
         void print(messageType);

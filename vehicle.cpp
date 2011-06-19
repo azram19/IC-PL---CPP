@@ -48,17 +48,12 @@ void Vehicle::print(messageType msg){
 
 void Vehicle::set_rate(double rate){
     Vehicle::rate = rate;
-    this.print(SetRate);
+    print(SetRate);
 }
 
 bool Vehicle::get_was_charged(){
 	return wascharged;
 }
-
-void Vehicle::set_was_charged(bool wascharged){
-	this.wascharged = wascharged;
-}
-
 
 void Vehicle::enter(Date date, int time){
     enter_date = date;
