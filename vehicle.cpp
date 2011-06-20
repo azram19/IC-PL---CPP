@@ -1,3 +1,10 @@
+/*
+Class Vehicle
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #include <string>
 #include "vehicle.hpp"
 #include "ChargingBeast.hpp"
@@ -81,27 +88,11 @@ void Vehicle::set_goes_free(bool gf){
 bool Vehicle::operator ==(const Vehicle& rhs) const{
     return plate_number == rhs.plate_number;
 }
-/*
-bool Vehicle::operator >(const Vehicle& rhs) const{
-    return (plate_number).compare(rhs.get_plate_number()) > 0;
-}
-
-bool Vehicle::operator <(const Vehicle& rhs) const{
-    return (plate_number).compare(rhs.get_plate_number()) < 0;
-}
-
-bool Vehicle::operator >=(const Vehicle& rhs) const{
-    return !(*this < rhs);
-}
-
-bool Vehicle::operator <=(const Vehicle& rhs) const{
-    return !(*this > rhs);
-}
 
 bool Vehicle::operator !=(const Vehicle& rhs) const{
     return !(*this == rhs);
 }
-*/
+
 Vehicle::Vehicle(string plate_number){
     this -> plate_number = plate_number;
     wascharged = false;

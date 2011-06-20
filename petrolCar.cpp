@@ -1,3 +1,10 @@
+/*
+Class PetrolCar
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #include "vehicle.hpp"
 #include "petrolCar.hpp"
 #include "ChargingBeast.hpp"

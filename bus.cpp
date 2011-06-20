@@ -1,3 +1,10 @@
+/*
+Class Bus
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #include <string>
 #include "vehicle.hpp"
 #include "bus.hpp"

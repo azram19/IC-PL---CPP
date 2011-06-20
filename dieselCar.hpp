@@ -1,3 +1,10 @@
+/*
+Class Vehicle
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #ifndef INC_DIESEL_CAR_H
 #define INC_DIESEL_CAR_H
 
@@ -5,8 +12,8 @@
 
 class DieselCar : public Vehicle {
 	private:
-        static double limit;
-        int emission;
+        static double limit; // limit of emission for a diesel car
+        int emission; //emission of the car
 	public:
 		DieselCar(string, int);
 		~DieselCar(){};

@@ -1,3 +1,10 @@
+/*
+Class DieselCar
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #include "vehicle.hpp"
 #include "dieselCar.hpp"
 #include "ChargingBeast.hpp"

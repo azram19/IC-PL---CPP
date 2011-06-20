@@ -1,3 +1,10 @@
+/*
+Class Lorry
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #include "vehicle.hpp"
 #include "lorry.hpp"
 #include "ChargingBeast.hpp"

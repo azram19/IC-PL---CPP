@@ -31,7 +31,7 @@ void PrintingParrot::print_message(Vehicle *v, messageType m){
 			if(typeid(*v)==typeid(Lorry)){cout<<((Lorry*)v)->get_axle_number()<<"-axle ";}
 				cout<<v->get_type()<<" ("<<v->get_plate_number()<<") enters on ";
 				(v->get_enter_date()).print_date();
-				cout<<" at "<<v->get_enter_time()<<"h00 hours"<<endl;
+				cout<<" at "<< setfill('0') << setw(2) << v->get_enter_time()<<"h00 hours"<<endl;
 			if(v->get_no_action()){
 				cout<<"The vehicle has already been charged today ; no action is taken"<<endl;}
 			else if(v->get_goes_free()){

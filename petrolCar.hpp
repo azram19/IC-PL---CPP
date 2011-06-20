@@ -1,3 +1,9 @@
+/*
+Class Vehicle
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
 #ifndef INC_PETROL_CAR_H
 #define INC_PETROL_CAR_H
 

@@ -1,3 +1,10 @@
+/*
+Class Vehicle
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #ifndef INC_LORRY_H
 #define INC_LORRY_H
 #include "vehicle.hpp"
@@ -7,7 +14,7 @@ using namespace std;
 
 class Lorry : public Vehicle{
 	private:
-		int axle_number;
+		int axle_number; //number of axles
 	public:
 		Lorry(string, int);
 		~Lorry(){};

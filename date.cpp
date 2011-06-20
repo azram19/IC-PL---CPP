@@ -1,3 +1,10 @@
+/*
+Class Vehicle
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #include <iostream>
 #include "date.hpp"
 

@@ -1,3 +1,10 @@
+/*
+Class Vehicle
+
+@author Lukasz Koprowski
+@author Piotr Bar
+*/
+
 #ifndef INC_VEHICLE_H
 #define INC_VEHICLE_H
 
@@ -32,10 +39,6 @@ class Vehicle{
         static void set_rate(double);
     
         bool operator == (const Vehicle&) const;
-        bool operator > (const Vehicle&) const;
-        bool operator < (const Vehicle&) const;
-        bool operator >= (const Vehicle&) const;
-        bool operator <= (const Vehicle&) const;
         bool operator != (const Vehicle&) const;
         
         string type;
@@ -51,17 +54,17 @@ class Vehicle{
     protected:
         
     private:
-        Date enter_date;
-        int enter_time;
+        Date enter_date; //date
+        int enter_time; //time
         string plate_number; 
-        double ra_charge;
-        double total_charge;
+        double ra_charge; //recent charge
+        double total_charge; //sum of all charges
         bool wascharged;
 	
 	bool no_action;
 	bool goes_free;
         
-        static double rate;
+        static double rate; //rate of charges
 };
 
 #endif /* INC_VEHICLE_H */

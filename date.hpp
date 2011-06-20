@@ -1,3 +1,9 @@
+/*
+Class Date
+
+@author Lukasz Koprowski
+*/
+
 #ifndef INC_DATE_H
 #define INC_DATE_H
 
@@ -21,6 +27,11 @@ class Date{
         bool operator != (const Date&) const;
         bool operator == (const Date&) const;
 
+	/*
+	Prints formatted date
+	
+	@author Piotr Bar
+	*/
 	void print_date();
 };
 
