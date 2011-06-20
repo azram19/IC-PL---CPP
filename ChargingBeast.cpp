@@ -59,3 +59,8 @@ void ChargingBeast::charge(Vehicle * wheeledMachine){
 	}
 
 }
+
+/* Sto, przez trzy
+   Sto, pięć lewy 
+   Sto, cztery praw.. o kurwa co to jest?!
+*/
