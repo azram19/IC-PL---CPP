@@ -61,8 +61,8 @@ void Vehicle::set_was_charged(bool w){
 void Vehicle::enter(Date date, int time){
     if(date == enter_date){
         wascharged = false;
-	goes_free = false;
-	no_action = false;
+	    goes_free = false;
+	    no_action = false;
     }
     enter_date = date;
     enter_time = time;
