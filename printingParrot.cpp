@@ -12,6 +12,10 @@
 
 using namespace std;
 
+/*
+Funtion prints the output. It is called with two arguments: pointer to a vehicle and a messageType. 
+MessageType indicates which communicate should be printed. Enum with message types is included in vehicle.hpp.
+*/
 void PrintingParrot::print_message(Vehicle *v, messageType m){
 	cout << "*** ";
   	cout << setprecision (2);
