@@ -1,6 +1,7 @@
 /*
  *  ChargingBeast.hpp
  *
+ *  This class is made for processing all charging of all cars entering city. It applies rules stated in specification/
  *  Created on: 18 Jun 2011
  *  Author: Lukasz Kmiecik 
  */
